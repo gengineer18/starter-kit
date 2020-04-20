@@ -17,7 +17,13 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: ''
+        content: 'description'
+      },
+      // 開発中はクローリングさせない。リリース時に必ず外すこと！！
+      {
+        hid: 'robots',
+        name: 'robots',
+        content: 'noindex,nofollow'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
