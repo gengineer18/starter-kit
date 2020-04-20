@@ -14,7 +14,7 @@ $ touch config/.env.local
 $ git checkout --orphan init
 $ git add .
 $ git commit -m first_commit
-$ git push -f . dev:master
+$ git push -f . init:master
 $ git gc --aggressive
 $ git log
 
