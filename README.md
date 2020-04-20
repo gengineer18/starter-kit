@@ -1,4 +1,4 @@
-# startet-kit
+# starter-kit
 
 > My laudable Nuxt.js project
 
