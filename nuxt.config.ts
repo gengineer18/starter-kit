@@ -1,5 +1,10 @@
+const envPath = `config/.env.${process.env.ENV || 'local'}`
+require('dotenv').config({ path: envPath })
+const envSet = process.env
+
 export default {
   mode: 'universal',
+  srcDir: 'app',
   /*
    ** Headers of the page
    */
@@ -76,5 +81,6 @@ export default {
   typescript: {
     typeCheck: true,
     ignoreNotFoundWarnings: true
-  }
+  },
+  env: envSet
 }
