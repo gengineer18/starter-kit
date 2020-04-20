@@ -17,7 +17,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: ''
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -52,7 +52,8 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/google-analytics'
   ],
   /*
    ** Axios module configuration
@@ -68,6 +69,9 @@ export default {
     theme: {
       dark: true
     }
+  },
+  googleAnalytics: {
+    id: 'UA-xxxxxxxxx-x'
   },
   /*
    ** Build configuration
