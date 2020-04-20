@@ -1,22 +1,24 @@
 # starter-kit
 
-> My laudable Nuxt.js project
+> Nuxt × Typescript(Vue.Extends) × Sass、 Google Analyticsセッティング済み。
 
 ## Build Setup
 
 ``` bash
-# install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# 環境変数設定
+$ touch config/.env.local
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# git設定(starter-kitのログ削除)
+$ git checkout --orphan init
+$ git add .
+$ git commit -m first_commit
+$ git push -f . dev:master
+$ git gc --aggressive
+$ git log
 
-# generate static project
-$ yarn generate
+$ git remote set-url origin <some_url>
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
