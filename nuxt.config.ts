@@ -17,16 +17,16 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'description'
+        content: 'description',
       },
       // 開発中はクローリングさせない。リリース時に必ず外すこと！！
       {
         hid: 'robots',
         name: 'robots',
-        content: 'noindex,nofollow'
-      }
+        content: 'noindex,nofollow',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -48,7 +48,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
   /*
    ** Nuxt.js modules
@@ -59,7 +59,7 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxt/typescript-build',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
   ],
   /*
    ** Axios module configuration
@@ -73,11 +73,11 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true
-    }
+      dark: true,
+    },
   },
   googleAnalytics: {
-    id: 'UA-xxxxxxxxx-x'
+    id: 'UA-xxxxxxxxx-x',
   },
   /*
    ** Build configuration
@@ -90,7 +90,7 @@ export default {
   },
   typescript: {
     typeCheck: true,
-    ignoreNotFoundWarnings: true
+    ignoreNotFoundWarnings: true,
   },
-  env: envSet
+  env: envSet,
 }
